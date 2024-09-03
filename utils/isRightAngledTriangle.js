@@ -1,0 +1,12 @@
+
+const maths = require('./mathFunctions.js')
+
+function isRightAngledTriangle(sideA, sideB, sideC) {
+  const sideASquared = maths.squareNumber(sideA)
+  const sideBSquared = maths.squareNumber(sideB)
+  const sideCSquared = maths.squareNumber(sideC)
+
+  return sideCSquared === sideASquared + sideBSquared;
+}
+
+module.exports = isRightAngledTriangle;
